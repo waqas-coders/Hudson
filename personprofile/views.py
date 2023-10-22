@@ -43,5 +43,4 @@ def list_people(request):
     else:
         profiles = Person.objects.all()
     
-    # Return the results as a JSON response
     return render(request, 'list_people.html', {'results': profiles})
